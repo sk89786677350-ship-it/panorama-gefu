@@ -1,4 +1,4 @@
-const SHELL_CACHE = 'panorama-gefu-shell-v1';
+const SHELL_CACHE = 'panorama-gefu-shell-v2';
 const IMAGE_CACHE = 'panorama-gefu-images-v1';
 const SHELL_FILES = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png'];
 self.addEventListener('install', event => {
@@ -74,3 +74,4 @@ self.addEventListener('message', event => {
     await reportAll(self.clients, { type: 'PRECACHE_DONE', done, failed, total: urls.length });
   })());
 });
+
